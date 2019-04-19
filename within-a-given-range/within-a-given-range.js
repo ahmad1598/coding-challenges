@@ -22,3 +22,5 @@ function isInRange(num, range) {
             return false
     }
 }
+
+module.exports = isInRange
