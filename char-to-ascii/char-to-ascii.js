@@ -15,3 +15,5 @@ Examples
 function ctoa(c) {
 	return c.charCodeAt(0);
 }
+
+module.exports = ctoa
