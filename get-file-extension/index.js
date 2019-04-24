@@ -6,5 +6,5 @@ const getExtension = arr => {
     arr.map(item => result.push(item.split('.')[1]))
     return result
 }
-
+//
 module.exports = getExtension
