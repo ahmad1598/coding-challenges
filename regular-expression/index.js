@@ -35,3 +35,15 @@ console.log(('(385)290-9090').match(phone)) //(385)290-9090
 let s = 'coding chanllenge is, fun'
 console.log(s.split(/[,\s]+/)) // split by comma or space
 console.log(s.replace(/([aeiou])/g,"$1$1")) //coodiing chaanlleengee iis, fuun  :)
+
+
+let reg = /^#([a-f\d]{3}){1,2}$/i
+console.log(reg.test('#abc'))
+console.log(reg.test('#F00'))
+
+let NumReg = /^[-+]?(\d*\.?\d+|\d+\.)$/
+console.log(NumReg.test(-1))
+console.log(NumReg.test(.05))
+console.log(NumReg.test(+1000))
+console.log(NumReg.test(3.1415926535))
+console.log(NumReg.test(42.))
