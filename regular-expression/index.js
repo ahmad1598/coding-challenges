@@ -41,9 +41,12 @@ let reg = /^#([a-f\d]{3}){1,2}$/i
 console.log(reg.test('#abc'))
 console.log(reg.test('#F00'))
 
-let NumReg = /^[-+]?(\d*\.?\d+|\d+\.)$/
-console.log(NumReg.test(-1))
-console.log(NumReg.test(.05))
-console.log(NumReg.test(+1000))
-console.log(NumReg.test(3.1415926535))
-console.log(NumReg.test(42.))
+let numReg = /^[-+]?(\d*\.?\d+|\d+\.)$/
+console.log(numReg.test(-1))
+console.log(numReg.test(.05))
+console.log(numReg.test(+1000))
+console.log(numReg.test(3.1415926535))
+console.log(numReg.test(42.))
+
+let dateReg = /^\d{4}-(0\d|1[0-2])-([0-2]\d|3[01])$/
+console.log(dateReg.test('2012-12-12'))
